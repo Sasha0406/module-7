@@ -130,7 +130,7 @@ a {
   width: 66px;
   height: 66px;
   content: '';
-  border-radius: 33px;
+  border-radius: 50%;
   background-color: #ffffff;
   border: 3px solid #fed136;
   background-repeat: no-repeat;
