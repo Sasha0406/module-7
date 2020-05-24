@@ -1,0 +1,268 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* pinyon-script-regular - latin */
+@font-face {
+  font-family: "Pinyon Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pinyon Script"), local("PinyonScript"),
+    url("../fonts/pinyon-script-v10-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/pinyon-script-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-serif-italic - latin */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Noto Serif Italic"), local("NotoSerif-Italic"),
+    url("../fonts/noto-serif-v8-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/noto-serif-v8-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+.navigation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 50px;
+  padding-bottom: 56px;
+}
+.navigation-header-logo p {
+  font-family: "Pinyon Script", cursive;
+  font-size: 26px;
+  letter-spacing: 1px;
+  line-height: 41px;
+  color: #fed136;
+}
+.navigation-header-list {
+  display: flex;
+}
+.navigation-header-list a {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 41px;
+  color: #222222;
+}
+.navigation-header-list a {
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+.navigation-header-list a:hover {
+  color: #fed136;
+}
+.navigation-header-list li:not(:last-of-type) {
+  margin-right: 40px;
+}
+.servise-list-item-E_Commerce::before,
+.servise-list-item-Responsive_Web::before,
+.servise-list-item-Web_Security::before {
+  display: block;
+  width: 66px;
+  height: 66px;
+  content: "";
+  border-radius: 33px;
+  background-color: #ffffff;
+  border: 3px solid #fed136;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+.servise-list-item-E_Commerce::before {
+  background-image: url("icons/Icon-Basket.png");
+}
+.servise-list-item-Responsive_Web::before {
+  background-image: url("icons/Icon-Laptop.png");
+}
+.servise-list-item-Web_Security::before {
+  background-image: url("icons/Icon-Locked.png");
+}
+.services {
+  padding-top: 56px;
+  padding-bottom: 118px;
+}
+.services-title,
+.contact-title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 75px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.services-title {
+  color: #222222;
+}
+.contact-title {
+  color: #ffffff;
+}
+.services-paragraph,
+.contact-paragraph {
+  font-family: "Droid Serif";
+  font-size: 16px;
+  font-style: italic;
+  color: #777777;
+}
+.services-paragraph {
+  margin-bottom: 80px;
+}
+.contact-paragraph {
+  margin-bottom: 74px;
+}
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+.servise-list-item-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: 0px;
+  color: #222222;
+}
+.servise-list-item-paragraph {
+  width: 290px;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #777777;
+}
+.contact {
+  background-color: #222222;
+  background-image: url("img/MapImage.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 104px;
+  padding-bottom: 114px;
+}
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-form-input {
+  width: 100%;
+  height: 50px;
+  border-radius: 2px;
+}
+.contact-form-input {
+  margin-bottom: 30px;
+}
+.contact-form-input,
+.contact-form-message {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #bbbbbb;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding-left: 20px;
+}
+.contact-form-input-wraper {
+  width: 455px;
+}
+.contact-form-message {
+  width: 455px;
+  height: 209px;
+  padding-top: 20px;
+  resize: none;
+}
+.contact-form-input::placeholder,
+.contact-form-message::placeholder {
+  text-transform: uppercase;
+}
+.contact-form-input:required:focus,
+.contact-form-message:required:focus {
+  outline: none;
+}
+.contact-form-input:required:focus:valid:not(:placeholder-shown),
+.contact-form-message:required:focus:valid:not(:placeholder-shown) {
+  border-color: #008000;
+}
+.contact-form-input:required:focus:invalid:not(:placeholder-shown),
+.contact-form-message:required:focus:invalid:not(:placeholder-shown) {
+  border-color: #ff0000;
+}
+.contact-button {
+  width: 240px;
+  height: 65px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #fed136;
+  border-style: none;
+}
+.contact-button-wraper {
+  margin: 0 auto;
+}
