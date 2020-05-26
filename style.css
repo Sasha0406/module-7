@@ -4,9 +4,9 @@
   font-style: normal;
   font-weight: 400;
   src: local('Montserrat Regular'), local('Montserrat-Regular'),
-    url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+    url('fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -14,9 +14,9 @@
   font-style: normal;
   font-weight: 700;
   src: local('Montserrat Bold'), local('Montserrat-Bold'),
-    url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    url('fonts/montserrat-v14-latin-700.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-slab-regular - latin */
 @font-face {
@@ -24,9 +24,9 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-    url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'),
+    url('fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('fonts/roboto-slab-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* pinyon-script-regular - latin */
 @font-face {
@@ -34,9 +34,9 @@
   font-style: normal;
   font-weight: 400;
   src: local('Pinyon Script'), local('PinyonScript'),
-    url('../fonts/pinyon-script-v10-latin-regular.woff2') format('woff2'),
+    url('fonts/pinyon-script-v10-latin-regular.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/pinyon-script-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('fonts/pinyon-script-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* noto-serif-italic - latin */
 @font-face {
@@ -44,9 +44,9 @@
   font-style: italic;
   font-weight: 400;
   src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
-    url('../fonts/noto-serif-v8-latin-italic.woff2') format('woff2'),
+    url('fonts/noto-serif-v8-latin-italic.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('../fonts/noto-serif-v8-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('fonts/noto-serif-v8-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 * {
   margin: 0;
@@ -167,7 +167,7 @@ a {
 }
 .services-paragraph,
 .contact-paragraph {
-  font-family: 'Droid Serif';
+  font-family: 'Noto Serif';
   font-size: 16px;
   font-style: italic;
   color: #777777;
@@ -223,7 +223,6 @@ a {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0px;
-  color: #bbbbbb;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   padding-left: 20px;
@@ -239,6 +238,7 @@ a {
 }
 .contact-form-input::placeholder,
 .contact-form-message::placeholder {
+  color: #bbbbbb;
   text-transform: uppercase;
 }
 .contact-form-input:required:focus,
